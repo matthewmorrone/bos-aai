@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+*::-webkit-scrollbar { 
+    display: none;
+}
+select:focus, input:focus, textarea:focus {
+    outline: none;
+}
+.focus, .focus td {
+    background-color: 1px solid #4D90FE;
+    border: 1px solid #4D90FE;
+    box-shadow: 5px 5px 5px #4D90FE;
+    transition: none;
+}
+
+th {
+    text-align: center;
+}
+button a, button a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+}
+.simple-keyboard {
+    display: none;
+    width: 50%;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.ex, .plus, .view {
+    float: left;
+    width: 1.5em;
+    height: 1.5em;
+    color: black;
+    opacity: .5;
+    border: 0;
+    border-radius: 0.5rem;
+}
+.ex {
+    background: url('img/ex.svg') no-repeat;
+}
+.plus {
+    background: url('img/plus.svg') no-repeat;
+}
+.view {
+    background: url('img/binoculars.svg') no-repeat;
+    background-position: right;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header, content, footer {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+table {
+    margin: auto;
+}
+.table {
+    width: auto !important;
+}
+.table > :not(:first-child), tbody {
+    border-top: 0px solid currentColor !important;
+}
+input, select {
+    width: 100%;
+}
+.source_segment {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.target_segment {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.transition {
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+.environment {
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 500px;
+}
+.notes {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+textarea {
+    resize: both;
+}
+.noverflow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.alert {
+    margin-bottom: 0px !important;
+}
+.modal-title {
+    text-align: center;
+}
+.modal-dialog {
+    position: relative;
+    display: table;
+    overflow-y: auto;
+    overflow-x: auto;
+    width: auto;
+    min-width: 300px;
+}
+.modal-dialog td {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}

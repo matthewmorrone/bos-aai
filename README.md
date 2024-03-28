@@ -14,3 +14,6 @@ $database = "";
 ```
 
 
+## Todo
+
++ add add, update and remove operations
